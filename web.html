@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="web.css">
+    <script src="web.js"></script> 
+</head>
+<body>
+    <body>
+
+        <nav>
+            <img src="images/primelogo.png" alt="Logo" id="logo">
+            <a href="#">Home</a>
+            <a href="#">Free to me</a>
+            <a href="store.html"><p style="border: 1px solid blue;">Store</p></a>
+            <div class="dropdown">
+                <button class="dropbtn"><p style="border: 1px solid blue;">Categories</p>
+                  <i class="fa fa-caret-down"></i>
+                </button>
+                <div class="dropdown-content">
+                  <a href="#">Movies</a>
+                  <a href="#">Web Series</a>
+                  <a href="#">TV Shows</a>
+                  <a href="#">Sports</a>
+
+                </div>
+                </div>
+            <input type="text" id="search-input" placeholder="Search">
+            <button id="search-button">Search</button>
+            <button id="fullscreen-button" onclick="toggleFullscreen()">Fullscreen</button>
+            <label id="icon">
+                <i class="fas fa-bars"></i>
+            </label>
+        </nav>
+
+        <nav class="sub-nav">
+            <a href="#"><i class="fas fa-search sub-nav-logo"></i></a>
+            <a href="#"><i class="fas fa-bell sub-nav-logo"></i></a>
+            <a href="#">Account</a>
+        </nav>
+
+        <!-- DISPLAY -->
+        <div class="home-container" style="background-image: url('images/home movie.jpeg'); background-size: cover; height: 65vh; background-repeat: no-repeat;">
+            <div class="home-movie-details-container">
+                <h1 class="home-movie-heading">Onward</h1>
+                <p class="home-movie-description">Onward is a 2020 American animated urban fantasy adventure film produced by Pixar Animation Studios.</p>
+                <button type="button" class="home-movie-play-button">
+                Play
+                </button>
+            </div>
+        </div>
+
+<!-- END OF DISPLAY -->
+        
+        <!-- MAIN CONTAINER -->
+        <section class="main-container">
+            <div class="location" id="home">
+                <h1 id="home">Popular on Movies</h1>
+                <div class="box">
+                    <a href=""><img src="images/mov1.jpeg" alt="" /></a>
+                    <a href=""><img src="images/mov2.jpeg" alt="" /></a>
+                    <a href=""><img src="images/mov3.jpeg" alt="" /></a>
+                    <a href=""><img src="images/mov4.jpeg" alt="" /></a>
+                    <a href=""><img src="images/mov5.jpeg" alt="" /></a>
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/no-time-to-die-movie-poster.png" alt="" /></a>
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/shang-chi-and-the-legend-of-the-ten-rings-movie-poster.png" alt="" /></a>
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/dune-movie-poster.png" alt="" /></a>
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-suicide-squad-movie-poster.png" alt="" /></a>
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/venom-let-there-be-carnage-movie-poster.png" alt="" /></a>
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/eternals-movie-poster.png" alt="" /></a>
+
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/army-of-thieves-movie-poster.png" alt="" /></a>
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-harder-they-fall-movie-poster.png" alt="" /></a>
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/halloween-kills-movie-poster.png" alt="" /></a>
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/twilight-movie-poster.png" alt="" /></a>
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/squid-game-south-korean-movie-poster.png" alt="" /></a>
+                    <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-pursuit-of-happyness-movie-poster.png" alt="" /></a>
+                </div>
+            </div>
+
+            <h1 id="myList">Trending Now</h1>
+            <div class="box">
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/grindhouse-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/clifford-the-big-red-dog-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/titanic-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/avatar-theatrical-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/a-few-good-men-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/king-richard-movie-poster.png" alt="" /></a>
+            </div>
+
+            <h1 id="tvShows">TV Shows</h1>
+            <div class="box">
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/dexter-new-blood-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/riverdale-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-boss-baby-family-business-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-protege-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/godzilla-vs-kong-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/demonic-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/cosmic-sin-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/infinite-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/zack-snyders-justice-league-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-tomorrow-war-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-vault-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/mortal-kombat-international-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/spider-man-advance-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/gunpowder-milkshake-british-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://www.imdb.com/title/tt14392248/mediaviewer/rm701847041/?ref_=ext_shr_lnk" alt="" /></a>
+                
+            
+            </div>
+
+            <h1 id="originals">Originals</h1>
+            <div class="box">
+                
+                <a href=""><img src="images/orgin2.jpeg" alt="" /></a>
+                <a href=""><img src="images/orgin 3.jpeg" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/spider-man-far-from-home-international-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/venom-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/snake-eyes-gi-joe-origins-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-addams-family-2-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/luca-movie-poster.png" alt="" /></a>
+                <a href=""><img src="https://assets.ccbp.in/frontend/react-js/movies-app/the-amazing-spider-man-movie-poster.png" alt="" /></a>
+                <a href=""><img src="avenger1.jpg" alt="" /></a>
+            </div>
+            </section>
+
+<!-- END OF DISPLAY -->
+
+<!-- FOOTER -->
+<footer>
+    <div class="logos">
+        <a href="https://www.facebook.com/AmazonIN/">Facebook<i class="fab fa-facebook-square fa-2x logo"></i></a>
+        <a href="https://www.instagram.com/amazondotin/?hl=en">Instagram<i class="fab fa-instagram fa-2x logo"></i></a>
+        <a href="https://twitter.com/amazon?lang=en">Twitter<i class="fab fa-twitter fa-2x logo"></i></a>
+        <a href="https://www.youtube.com/user/amazon">Youtube<i class="fab fa-youtube fa-2x logo"></i></a>
+    </div>
+    <p>Contact US</p>
+    <p>Help center</p>
+</footer>
+</body>
+</html>
